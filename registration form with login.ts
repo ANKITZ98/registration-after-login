@@ -64,11 +64,11 @@ export class DashboardComponent implements OnInit {
       this.updateFlag=true;
       this.users[index];
     }
-    // cancelme(){
-    //   this.buttonFlag=false;
-    // }
-   
-  
+    cancelme(){
+      this.buttonFlag=false;
+      this.updateFlag=false;
+    }
+    
   }
     
     

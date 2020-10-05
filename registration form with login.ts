@@ -55,14 +55,15 @@ export class DashboardComponent implements OnInit {
       //this.users.push(this.user);
       console.log(this.users);
     }
-    deleteme(index){
+    deleteme(index:number){
       
-      this.users.splice(index,1);
+      this.users.splice(index, 1);
     }
-    updateme(index){
+    updateme(index: number){
+      console.log(index);
       this.buttonFlag=true;
       this.updateFlag=true;
-      this.users[index];
+      this.user=this.users[index];
     }
     cancelme(){
       this.buttonFlag=false;

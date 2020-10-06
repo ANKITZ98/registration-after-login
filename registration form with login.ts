@@ -42,7 +42,7 @@ export class DashboardComponent implements OnInit {
 
     } 
     
-
+    
     login() {
       this.buttonFlag=false;
       if(this.updateFlag){
@@ -56,14 +56,16 @@ export class DashboardComponent implements OnInit {
       console.log(this.users);
     }
     deleteme(index:number){
-      
+      console.log(index)
       this.users.splice(index, 1);
     }
-    updateme(index: number){
+    updateme(index:any){
       console.log(index);
       this.buttonFlag=true;
       this.updateFlag=true;
+      this.selectindex=index;
       this.user=this.users[index];
+     
     }
     cancelme(){
       this.buttonFlag=false;
